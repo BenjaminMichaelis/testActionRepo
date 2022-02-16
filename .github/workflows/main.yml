@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: foo
-        uses: BenjaminMichaelis/onedrive-to-github-sync-action@v0.0.1
+        uses: BenjaminMichaelis/onedrive-to-github-sync-action@v0.0.2
         with:
           urls: 'google.com'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
